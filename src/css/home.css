@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Crimson Pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.itempreview {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    margin: 20px 10px;
+}
+
+.filter-section {
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected {
+    background-color: #ffd700 !important;
+    color: #fff !important;
+}
+
+.filter-header h2 {
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px;
+}
+
+.filter-item {
+    margin: 20px 0;
+}
+
+.filter-item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.condition-options, .category-options {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.condition-btn, .category-btn {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.filter-item > input[type="range"] {
+    width: 100%;
+}
+
+button {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    background-color: rgba(255, 243, 161, 0.608);
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 243, 161, 0.808);
+}
+
+.option-btn {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.option-btn button {
+    width: 80%;
+    margin: 10px auto;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .itempreview {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 20px 5%;
+    }
+
+    .filter-section {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .option-btn {
+        padding: 5% 5% 5% 5%;
+        width: 90%;
+        bottom: 10%;
+    }
+
+    .option-btn button {
+        width: 100%;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .itempreview {
+        margin: 5%;
+    }
+
+    .filter-section {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .option-btn {
+        padding: 5% 5% 5% 5%;
+        width: 80%;
+        bottom: 10%;
+    }
+
+    .option-btn button {
+        width: 100%;
+    }
+}

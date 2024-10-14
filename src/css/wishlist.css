@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px; 
+    margin-top: 20px; 
+    text-align: center; 
+    font-family: "Crimson Pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.itempreview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    min-height: 50vh;
+    padding: 0 10px 10px 10px;
+    text-align: center;
+}
+
+.heart {
+    color: #d11111;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .itempreview {
+        justify-content: center;
+        padding: 0 20px 20px 20px;
+        height: 60vh;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .container {
+        padding: 0 5%;
+    }
+
+    .itempreview {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        height: 50vh;
+        margin-bottom: auto;
+    }
+}

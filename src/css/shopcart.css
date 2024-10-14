@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    text-align: center; 
+    font-family: "Crimson Pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    min-height: 50vh;
+}
+
+.itempreview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: stretch; 
+    width: 100%;
+    padding: 0 10px 10px 10px;
+}
+
+.price {
+    margin-top: 20px;
+    border-top: solid black 1px;
+    text-align: right;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.paymentbox {
+    background-color: #cccccc;
+    padding: 20px; 
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #555555;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.paymentbutton {
+    background-color: #222222;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment {
+    color: white;
+    font-family: "Crimson Pro", serif;
+    font-size: 20px;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        min-height: 50vh;
+    }
+
+    .itempreview {
+        width: 60%;
+        padding: 0 20px 20px 20px;
+    }
+
+    .paymentbox {
+        width: 35%;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .container {
+        padding: 0 5%;
+        min-height: 60vh;
+    }
+
+    .itempreview {
+        width: 65%;
+        padding: 0 20px 20px 20px;
+    }
+
+    .paymentbox {
+        width: 30%;
+    }
+
+    .paymentbutton {
+        max-width: 300px;
+    }
+}

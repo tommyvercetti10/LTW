@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+}
+
+.add-item-section,
+.item-section {
+    padding: 5%;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.add-item-container,
+.item-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.image-container {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.user span {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.item-info h1 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.price {
+    color: red;
+    font-size: 1.25rem;
+}
+
+.add-comment,
+.cart {
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 243, 161, 0.608);
+    cursor: pointer;
+}
+
+.add-comment:hover,
+.cart:hover {
+    background-color: rgba(255, 243, 161, 0.8);
+}
+
+.comments {
+    padding: 0;
+    padding-bottom: 50px;
+    margin-left: 10px;
+}
+
+.add-comment-form {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.add-comment-form > .save-button {
+    width: 50%;
+    height: 50px;
+}
+
+.add-comment-form > .comment-textarea {
+    width: 70%;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .item-section {
+        flex-direction: row;
+        margin: 5%;
+    }
+
+    .image-container {
+        width: 40%;
+    }
+
+    .item-info {
+        padding-left: 5%;
+    }
+
+    .add-comment-form,
+    .save-button,
+    .comment-textarea {
+        max-width: 80%;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .item-section {
+        margin: 10%;
+    }
+
+    .image-container {
+        width: 30%;
+    }
+
+    .item-info {
+        padding-left: 10%;
+    }
+
+    .add-comment-form,
+    .save-button,
+    .comment-textarea {
+        max-width: 60%;
+    }
+}
+
+/* Carousel Arrows */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.left-arrow, .right-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px; 
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
